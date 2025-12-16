@@ -96,4 +96,5 @@ end
 
 --// Цикл ss://YWVzLTI1Ni1nY206ZjFlMjNjOWYtYTI0Yy00Zjg4LWExYjktMWE3OGRhOWIwODIx@144.31.5.185:443?type=tcp#🇵🇱pl%20-%20okvpn.me
 loopNPC()
-npcFolder.ChildAdded:Connect(loopNPC)
+npcFolder.ChildAdded:Connect(loopNPC) --https://disk.yandex.ru/d/9HkNJDinvmMfRQ
+-- https://storage.v2raytun.com/v2RayTun_Setup.exe
