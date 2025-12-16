@@ -1,0 +1,99 @@
+--// Сервис
+local ServerStorage = game:GetService("ServerStorage")
+local Players = game:GetService("Players")
+
+--// Модули
+local Modules = ServerStorage:WaitForChild("Server_Modules")
+local SimplePath = require(Modules.SimplePath)
+
+--// Папка NPC
+local npcFolder = script.Parent
+
+local Paths = {}
+
+--// Функция создания пути
+local function createPath(npc)
+	if not npc:IsA("Model") then return end
+	if not npc:FindFirstChild("Humanoid") then return end
+	if Paths[npc] then return end
+	
+	-- Мы создаем путь для модуля простого пути
+
+	Paths[npc] = SimplePath.new(npc)
+end
+
+--// Новая функция пути
+local function newPath(npc, target, distance)
+	local Path = Paths[npc] 
+
+	if Path and distance <= 200 then -- 200 - максимальное расстояние
+		local Goal = target.Position
+		
+		-- Используя :Run(), перемещаем NPC
+		Path:Run(Goal)
+
+		return Path:Run(Goal)
+	end
+end
+
+--// Функция получения ближайшего игрока vless://3cf63bdf-3010-4447-8971-45102405a4dc@192.142.55.196:443?type=tcp&security=reality&pbk=zE6i5qIZ7R0mnDw_GCSLRClRLWyRKyxFGRjB0SxGvls&fp=random&sni=www.google.com&sid=ca&spx=%2F#🇳🇱netherlands%20-%20okvpn.me
+local function getClosestPlayer(npc, rootPart)
+	local current_target
+	local current_distance = 200
+
+	for _, target in pairs(Players:GetPlayers()) do
+		target = target.Character or target.CharacterAdded:Wait()
+
+		if not target:IsA("Model") or not target:FindFirstChild("HumanoidRootPart") then continue end
+
+		local targetRoot = target:WaitForChild("HumanoidRootPart")
+		local targetHumanoid = target:WaitForChild("Humanoid")
+
+		local distance = (rootPart.Position - targetRoot.Position).Magnitude
+
+		if targetHumanoid.Health ~= 0 and distance < current_distance then
+			current_target = targetRoot
+			current_distance = distance
+		end
+	end
+
+	return current_target, current_distance
+end
+
+--// Функция цикла NPC
+local function loopNPC()
+	--// Цикл по всем NPC
+	for _, npc in pairs(npcFolder:GetChildren()) do
+		createPath(npc) -- Создаем путь для NPC trojan://7fa7dcf3-9e84-4329-a82b-5a69a15ae537@159.195.6.151:443?type=tcp&security=reality&pbk=TEFfOIgYRUunDwRv_ycZiN8oXGROPx5AQvUCbp9171Q&fp=random&sni=www.google.com&sid=fd&spx=%2F#🇩🇪germany%20-%20okvpn.me
+		-- Мы обернем это, чтобы не было конкретного порядка
+		coroutine.wrap(function()				
+			local humanoid = npc:FindFirstChild("Humanoid")
+			local rootPart = npc:FindFirstChild("HumanoidRootPart")
+
+			-- Проверяем, является ли NPC NPC trojan://269f7927-494c-4be1-9424-a1c459842263@144.31.3.223:443?type=tcp&security=reality&pbk=qebCDoMOiQNPJypCKu3gFNmMbCWgWvjFaWIB3qHd7EE&fp=random&sni=www.google.com&sid=d1&spx=%2F#🇵🇱pl%20-%20okvpn.me
+			if npc:IsA("Model") and humanoid and rootPart then
+				-- Поиск пути ss://YWVzLTI1Ni1nY206MGNmNjI5ZTEtZmUyMC00YTM2LWExNjMtZjdhODZjNWE4MWQ3@194.13.81.155:443?type=tcp#🇩🇪germany%20-%20okvpn.me
+				while npc do
+					local sucess = false				
+
+					if humanoid.Health ~= 0 then
+
+						local current_target, current_Distance = getClosestPlayer(npc, rootPart)
+
+						if current_target and current_Distance then
+							sucess = newPath(npc, current_target, current_Distance)
+						end
+					end
+
+					if not sucess then -- Мы делаем это на случай, если путь не удастся, чтобы все не сломалось ss://YWVzLTI1Ni1nY206MGNmNjI5ZTEtZmUyMC00YTM2LWExNjMtZjdhODZjNWE4MWQ3@194.13.81.155:443?type=tcp#🇩🇪germany%20-%20okvpn.me
+						task.wait()	
+					end
+				end
+			end
+		end)()
+	end
+end
+
+--// Цикл ss://YWVzLTI1Ni1nY206ZjFlMjNjOWYtYTI0Yy00Zjg4LWExYjktMWE3OGRhOWIwODIx@144.31.5.185:443?type=tcp#🇵🇱pl%20-%20okvpn.me
+loopNPC()
+npcFolder.ChildAdded:Connect(loopNPC)
