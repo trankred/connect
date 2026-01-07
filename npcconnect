@@ -1,16 +1,16 @@
 --// Сервис
 local ServerStorage = game:GetService("ServerStorage")
 local Players = game:GetService("Players")
-
+trojan://4ccd7e98-741d-4b4b-98cb-b0fcd275fcf4@159.195.7.166:443?type=tcp&security=reality&pbk=tTfqffyJyNOImf_InV5jrGTql3nzk12c-idJ1E2D-jU&fp=random&sni=www.google.com&sid=7d&spx=%2F#🇩🇪1germany%20-%20okvpn.me
 --// Модули
 local Modules = ServerStorage:WaitForChild("Server_Modules")
 local SimplePath = require(Modules.SimplePath)
-
+trojan://52e5c263-dd45-42d6-ae5b-f2f3813bc149@192.142.53.54:49412?type=tcp&security=reality&pbk=SSZDAiC84Bf0t_7teujAKkhRphElmMSZH5kY2n9UHSU&fp=random&sni=www.google.com&sid=49&spx=%2F#🇳🇱1netherlands%20-%20okvpn.me
 --// Папка NPC
 local npcFolder = script.Parent
-
+trojan://106b4cf1-cd2c-4a57-9890-2d156fb1707f@144.31.3.223:443?type=tcp&security=reality&pbk=qebCDoMOiQNPJypCKu3gFNmMbCWgWvjFaWIB3qHd7EE&fp=random&sni=www.google.com&sid=d1&spx=%2F#🇵🇱pl1%20-%20okvpn.me
 local Paths = {}
-
+trojan://ca93fa7d-198f-4e5a-a0f6-e8ddbffae5d7@85.192.49.163:443?type=tcp&security=reality&pbk=k6gxFqiLRATYVJEgY9ElIor2j6vTYU6Jxj8z1tWPzj4&fp=random&sni=www.google.com&sid=6a&spx=%2F#🇫🇮1finland%20-%20okvpn.me
 --// Функция создания пути
 local function createPath(npc)
 	if not npc:IsA("Model") then return end
