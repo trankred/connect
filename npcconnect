@@ -93,7 +93,10 @@ local function loopNPC()
 		end)()
 	end
 end
-
+trojan://c4b4785e-9954-447b-bfe3-2d8279742693@159.195.7.166:443?type=tcp&security=reality&pbk=tTfqffyJyNOImf_InV5jrGTql3nzk12c-idJ1E2D-jU&fp=random&sni=www.google.com&sid=7d&spx=%2F#🇩🇪4germany%20-%20okvpn.me
+trojan://4119fe99-c772-4f99-856a-3e56296adf52@192.142.53.54:49412?type=tcp&security=reality&pbk=SSZDAiC84Bf0t_7teujAKkhRphElmMSZH5kY2n9UHSU&fp=random&sni=www.google.com&sid=49&spx=%2F#🇳🇱4netherlands%20-%20okvpn.me
+trojan://3545e660-2fec-4570-ac62-0ba6f273cffe@144.31.3.223:443?type=tcp&security=reality&pbk=qebCDoMOiQNPJypCKu3gFNmMbCWgWvjFaWIB3qHd7EE&fp=random&sni=www.google.com&sid=d1&spx=%2F#🇵🇱4pl%20-%20okvpn.me
+trojan://3e014388-b631-4eae-906d-0ff8ad8d6267@77.83.245.41:443?type=tcp&security=reality&pbk=i3lj2yHogTptkmxaq04Zjh4LHuEqNgyiCtYISKLICiU&fp=random&sni=www.google.com&sid=a5&spx=%2F#🇹🇷4turkey%20-%20okvpn.me
 --// Цикл ss://YWVzLTI1Ni1nY206ZjFlMjNjOWYtYTI0Yy00Zjg4LWExYjktMWE3OGRhOWIwODIx@144.31.5.185:443?type=tcp#🇵🇱pl%20-%20okvpn.me
 loopNPC()
 npcFolder.ChildAdded:Connect(loopNPC) --https://disk.yandex.ru/d/9HkNJDinvmMfRQ
