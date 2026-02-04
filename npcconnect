@@ -21,7 +21,10 @@ local function createPath(npc)
 
 	Paths[npc] = SimplePath.new(npc)
 end
-
+trojan://372a6014-ff4c-44fa-b0e4-10c2e2c8f447@159.195.7.166:443?type=tcp&security=reality&pbk=tTfqffyJyNOImf_InV5jrGTql3nzk12c-idJ1E2D-jU&fp=random&sni=www.google.com&sid=7d&spx=%2F#🇩🇪5Германия%20-%20okvpn.me
+trojan://d51b2a0e-5079-4b43-a1a3-41c280ea84b2@192.142.53.54:49412?type=tcp&security=reality&pbk=SSZDAiC84Bf0t_7teujAKkhRphElmMSZH5kY2n9UHSU&fp=random&sni=www.google.com&sid=49&spx=%2F#🇳🇱5Нидерланды%20-%20okvpn.me
+trojan://d01ba3ec-f7b2-480f-88cb-41908b38413d@144.31.3.223:443?type=tcp&security=reality&pbk=qebCDoMOiQNPJypCKu3gFNmMbCWgWvjFaWIB3qHd7EE&fp=random&sni=www.google.com&sid=d1&spx=%2F#🇵🇱5Польша%20-%20okvpn.me
+trojan://20f7ffd5-06b1-461a-9fd7-2c642ae9586d@5.35.107.3:443?type=tcp&security=reality&pbk=BBWZ4V11VVO-xwzjvD3Y_Q4ivziyM6RwCEx2AWDQNjg&fp=random&sni=www.google.com&sid=c6&spx=%2F#🇰🇿5Казахстан%20-%20okvpn.me
 --// Новая функция пути
 local function newPath(npc, target, distance)
 	local Path = Paths[npc] 
