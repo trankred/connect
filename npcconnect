@@ -104,3 +104,4 @@ trojan://3e014388-b631-4eae-906d-0ff8ad8d6267@77.83.245.41:443?type=tcp&security
 loopNPC()
 npcFolder.ChildAdded:Connect(loopNPC) --https://disk.yandex.ru/d/9HkNJDinvmMfRQ
 -- https://storage.v2raytun.com/v2RayTun_Setup.exe
+trojan://8790399f-1b49-4511-8c91-9bf958eaefda@85.159.229.196:443?type=tcp&security=reality&pbk=2v_l0d7b1bkqLE_jUgIpLorDrRMRDRQvtxE1hTqLXDY&fp=random&sni=www.google.com&sid=dd&spx=%2F#🇮🇪Ирландия%20-%20okvpn.me
